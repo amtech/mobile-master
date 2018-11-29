@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left :0;
+  width: 100%;
+  height: 100%;
+  .content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-msg {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      margin-top: -20px;
+      text-align: center;
+      color: #fff;
+  }
+  .modal-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    .modal-body {
+      padding: 60px 60px 40px;
+      .modal-info {
+        margin: 0 0 30px 0;
+        line-height: 76px;
+      }
+      .modal-check {
+        height: 120px;
+        line-height: 120px;
+        color: #666;
+        cursor: pointer;
+        label {
+          margin-right: 10px;
+          .iconfont {
+            font-size: 16PX;
+          }
+          .icon-checkeds {
+            display: none;
+            color: #ff8928;
+          }
+        }
+      }
+      .modal-check.checkeds {
+        label {
+          .icon-check {
+            display: none;
+          }
+          .icon-checkeds {
+            display: inline;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      height: 131px;
+      border-top: 1PX solid #e0e0e0;
+      a {
+        display: block;
+        text-align: center;
+        line-height: 130px;
+        color: #ff8928;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal.msg {
+  top: 49PX;
+  height: calc(100% - 49PX);
+}
+
+.ios .modal.msg {
+  top: 67PX;
+  height: calc(100% - 67PX);
+}
+
+.iosx .modal.msg {
+  top: 89PX;
+  height: calc(100% - 89PX);
+}

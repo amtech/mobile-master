@@ -1,0 +1,84 @@
+.labourBody {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// 审批
+.approve {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  background-color: #f3f3f3;
+
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    box-shadow: 0 -8px 25px 0 #d2d2d2;
+    resize: none;
+  }
+
+  .approveBtn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 24px 0 30px 0;
+    background-color: #f3f3f3;
+
+    .ghost,
+    .primate{
+      display: block;
+      float: left;
+      width: 310px;
+      height: 90px;
+      text-align: center;
+      line-height: 90px;
+      border-width: 1PX;
+    }
+
+    .two-btn {
+      width: 46%;
+    }
+  }
+}
+
+// 说明
+.labourDes {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  margin-left: -40%;
+  margin-top: -55%;
+  border-radius: 10px;
+
+  .desBtn {
+    width: 200px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+
+  .labourDesTitle {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    background-color: #f3f3f3;
+  }
+  
+  .labourDesTxt {
+    padding: 20px 20px;
+    line-height: 60px;
+    background-color: #fff;
+  }
+}

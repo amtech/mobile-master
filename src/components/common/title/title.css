@@ -1,0 +1,35 @@
+.title {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 122px;
+  padding: 0 40px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1PX solid #e0e0e0;
+}
+
+.leftIcon {
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  color: #999;
+}
+
+.title p {
+  font-size: 50px;
+  height: 122px;
+  line-height: 122px;
+  text-align: center;
+}
+
+.title span:nth-child(2) {
+  margin: 0 auto;
+}
+
+.titlePlaceHolder {
+  width: 100%;
+  height: 122px;
+}

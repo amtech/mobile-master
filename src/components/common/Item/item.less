@@ -1,0 +1,47 @@
+.itemBody {
+  position: relative;
+  display: flex;
+  width: calc( 100% - 80px );
+  padding: 40px 0;
+  margin: 0 auto;
+  border-bottom: 1PX solid #e0e0e0;
+  background-color: #fff;
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+  }
+  
+  .shortTitle {
+    flex: 0.3;
+  }
+
+  .longTitle {
+    flex: 0.4;
+  }
+  
+  .longTxt {
+    flex: 0.7;
+    text-align: right;
+    color: #666;
+  }
+
+  .shortTxt {
+    flex: 0.6;
+    text-align: right;
+    color: #666;
+  }
+
+  .itemTip {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 32px;
+    color: #ff8928;
+  }
+}
+
+.borderNone {
+  border: none;
+}
